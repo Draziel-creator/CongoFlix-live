@@ -110,14 +110,7 @@
     <script>
         const bgList = [
             "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMIlI3lCJpOUGQQbzAZDPSz3gKanOKbgiso8VBLLNXiP7C8L0LPCs9TRLVpTzqOLhgKA7vwwp_FWd2MouHvj3mAmlcOFalg8zTaW04p6Sf1aIfiDY42puyieOYO_sJa6nvnUMFHmdBgZEzE4dAHQGIpS8U-_CK6cpbUJbe1opqzHEsxTzEvDUQAdvNxO7D/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.24.jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMc24eo9WnrekAkt6QgarVkDm8m5Sc72SHGbrTX2cxK687SFOtO3sL4Lp2ACIIqpQOc3Jkwcln0iAhi-l1sR-2WN5pEKeoFHk3Nv8CgbNUiRnn9MjAq2KDCP-kQgzF23HiUBLs9sifB6qmQ0hiVhZpcSILw7wLu-9KVWASJ9eYS8NeVS62M-nO5ORO0rJ/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.25.jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcnIHz3n8KscfJIN8lWA40ecbeKM4ZKw-ULx8v8nacCTZfPFX6UXMbAfVFZMR-gmnzBfpqd7kI2XuuPf0TJyW1MQwQuKVsovRzWT81Wdn_FcwYWEl09Bll8xG3BASCO6GpfQsJffN74OnN0HyiavZ6y21hiVJeb3RcgKWkCS17Dn0J0otgls6VzUw8XMw6/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.25%20(1).jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_GEjNn2qxm1aMcRgpvCJ7LAcTRrxAVc-uZ1qQHUqaPHdEgoRP3XVO4ERHmdTJ7mc_XQDTLJ6RmG7OAOqCQiJHXCRkszUPoAYcDZ1ckM-va-1kNlJCfaPYt2Y_eWaHKhqXq2jrbrzzbnOk1CP9hBPN2sAakde4Q6YWEUAKMI0RZjttQsbPwGnmNP9ItYbX/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.25%20(2).jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwzAA7eO_H8EdLLtVCRVoE-5eRKI3a1HHfsax5CAhSDy9EXcss6vAQgPwYoLEdWSGZbjSSXwns3JGi_XK5noKfkLlCea7Oo4tOJ-bYD57xdS-sDRDA7JuzEbZLyyaNaDsROhwxu7l2R7X1lF_sf40SWa6XBfcj_8iqpvY4_WI6ia4je_uaZL77PtBSjdp8/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.26.jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRH_FtXUB0DaM7ZLwv9GdSm7xGxLfrRhj8-rN4tViPloAJdwh9PoYjFYV4Cxz0dNd6uqxJvMU0yVML9tOiqLpSNZk_TQpiz1agTkYL0OKF5JVHu5bVG_PNwM1FRdga03uirSZnWT0Gu4_3IVkMZA0iP6iRtoS-jKPfD0Zq0KO9kzhgXcl2AuRTUwyiQkQQ/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.26%20(1).jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvFiT5ODSbHdiiZw1uzqaR0S-4CCCJjMTPQrIdN5NJSQhwRR3P9R_GLR4HdsDzH8KxBUJGllMGqYNSOw2Szkk-8tnNwyZY7YhzNQ5csFGgYXpYO0ufV8RGAbi9rvaQsoisTGFaBdcZ_fkLDJsYuWpIEHlS3KNMj6dYqclt_LeL35HPIGAWvj1tsiNJ46-S/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.26%20(2).jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTcm249Oej6d-zQYh-lopyOv9AkkHKCtUUh2SgZdQNbzLvoHXbLYG1m-oxgzf7rqhqc463svfkuuXsdQ1IsHvXIJxPORYo3JEsvcY6l3oZ6su1LnLdhxQ87CTkgXNnL4BSLujJMdBJrRxvhLCJ5UtZzREelgN2Suv2yG-HyTtUn8ZR4-W4QOAxpPsfThYK/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.27.jpeg",
-            "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi63FikksuwlZM8SIo_-mwJQhKnd0lbrlosGTwNROyFYL5xTPc5slCRhYmvOVwy1L9W_28qPJ6YyAb9WVlPEVgGRSMOv8wuvVxhxZvBMKXIXIG-HycoxodJ1dSOeQ_nvPzYUp1jyMSLUT0axrUOAWAcF3cucp9OvSQ7-Gjg2iIjpvtiEfqJUo736zqyCGDO/s320/WhatsApp%20Image%202026-05-05%20at%2010.39.27%20(1).jpeg"
+            
         ];
 
         let currentBg = 0;
